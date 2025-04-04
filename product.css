@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0ee1e9; /* Fallback color */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Watermark Logo Background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Images/logo.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0.2; /* Adjust transparency */
+    z-index: -1;
+}
+
+/* Header */
+header {
+    background: url('Images/logo.png') no-repeat center center;
+    background-color: hsla(60, 100%, 50%, 0.99);
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+
+header img {
+    width: 150px; /* Adjust size */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #ffcc00;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Hero Section */
+#hero {
+    background: url('Images/logo.png') no-repeat center center;
+    background-size: contain;
+    padding: 100px 20px;
+}
+
+/* Section Styling */
+section {
+    padding: 100px 20px;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* Activities Section */
+#activities {
+    background: url('Images/Trampoline1.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+
+
+/* Ninja Course Section */
+#ninja-course {
+    background: url('Images/Ninja-course-1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #ebf217;
+    color: #1ca5e0;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section {
+        font-size: 30px;
+        padding: 60px 15px;
+    }
+}

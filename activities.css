@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0ee1e9; /* Matching Home Page Background */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Watermark Logo Background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Images/logo.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    background: url('Images/logo.png') no-repeat center center;
+    background-color: hsla(60, 100%, 50%, 0.99);
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8em;
+    color: #333;
+}
+
+header p {
+    font-size: 1.4em;
+    color: #555;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #ffcc00;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Section Styling */
+section {
+    padding: 80px 20px;
+    font-size: 35px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    position: relative;
+}
+
+/* Individual Services - Background Images */
+#open-jump {
+    background: url('Images/Trampoline1.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+#birthday-parties {
+    background: url('Images/birthday_parties.webp') no-repeat center center;
+    background-size: cover;
+}
+
+#group-events {
+    background: url('Images/group-events.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#fitness-classes {
+    background: url('Images/Ninja-Course.2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#dodgeball {
+    background: url('Images/Dodgeball.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Service Images */
+.service-img {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-img:hover {
+    transform: scale(1.05);
+}
+
+/* Service Text */
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.4em;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #ebf217;
+    color: #1ca5e0;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section {
+        font-size: 28px;
+        padding: 60px 15px;
+    }
+
+    .service-img {
+        max-width: 90%;
+        max-height: 300px;
+    }
+}

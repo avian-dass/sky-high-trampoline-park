@@ -1,0 +1,150 @@
+/* Pricing Page Styles */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0ee1e9; /* Fallback color */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Watermark Logo Background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Images/logo.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0.2; /* Adjust transparency */
+    z-index: -1;
+}
+
+/* Header */
+header {
+    background: url('Images/logo.png') no-repeat center center;
+    background-color: hsla(60, 100%, 50%, 0.99);
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+
+header img {
+    width: 150px; /* Adjust size */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #ffcc00;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Hero Section */
+#hero {
+    background: url('Images/logo.png') no-repeat center center;
+    background-size: contain;
+    padding: 100px 20px;
+}
+
+
+/* Pricing Section */
+#pricing {
+    padding: 80px 20px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+#pricing h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#pricing p {
+    font-size: 18px;
+    color: #666;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.pricing-card {
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.pricing-card h2 {
+    font-size: 24px;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.pricing-card p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #ebf217;
+    color: #1ca5e0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing-card {
+        width: 80%;
+    }
+}

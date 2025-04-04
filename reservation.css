@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0ee1e9; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Header */
+header {
+    background-color: hsla(60, 100%, 50%, 0.99);
+    padding: 30px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 8px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #ffcc00;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Reservation Section */
+#reservation {
+    padding: 40px 15px;
+    background-color: rgba(0, 119, 204, 0.5); /* Transparent blue background */
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+#reservation h2 {
+    font-size: 1.6rem;
+    color: #0077cc;
+}
+
+#reservation p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 1rem;
+    margin: 8px 0 4px;
+    color: #333;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 85%; /* Reduced width */
+    padding: 8px; /* Smaller padding */
+    font-size: 0.9rem; /* Smaller text */
+    margin: 5px 0 12px;
+    border: 2px solid #0077cc;
+    border-radius: 5px;
+    background-color: #0077cc;
+    opacity: 0.8; /* Slight transparency for input boxes */
+}
+
+form textarea {
+    height: 80px; /* Smaller textarea */
+}
+
+/* Submit Button */
+.btn {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff6600;
+    color:  #0077cc;
+}
+
+/* Footer */
+footer {
+    background-color: #ebf217;
+    color: #1ca5e0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    #reservation {
+        padding: 30px 12px;
+    }
+
+    #reservation h2 {
+        font-size: 1.4rem;
+    }
+
+    #reservation p {
+        font-size: 0.9rem;
+    }
+
+    form label {
+        font-size: 0.9rem;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 18px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
